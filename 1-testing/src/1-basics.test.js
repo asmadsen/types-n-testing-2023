@@ -9,7 +9,7 @@ describe('add', () => {
     expect(add(-1, -2)).toBe(-3)
   })
 
-  it.skip('fails to add two strings', () => {
-    expect(() => add('1', '2')).toThrow()
+  it('fails to add two strings', () => {
+    expect(() => add(1, '2')).toThrow()
   })
 })
