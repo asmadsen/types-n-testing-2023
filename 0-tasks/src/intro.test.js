@@ -8,21 +8,24 @@ it('should be able to run tests', () => {
    */
 })
 
-it('should return 1 for first call after creating a counter', () => {
-  const getNextValue = createCounter()
-  const first = getNextValue()
-})
-
 it('should return new number for every call to counter', () => {
   const getNextValue = createCounter()
   const first = getNextValue()
   const second = getNextValue()
+  expect(first).not.toBe(second)
+})
+
+it('should return 1 for first call after creating a counter', () => {
+  const getNextValue = createCounter()
+  const first = getNextValue()
+  expect(first).toBe(1)
 })
 
 it('should return higher number for every call to counter', () => {
   const getNextValue = createCounter()
   const first = getNextValue()
   const second = getNextValue()
+  expect(first).toBeLessThan(second)
   /*
    * Tips: You can find more functions for expect here:
    * https://vitest.dev/api/expect.html

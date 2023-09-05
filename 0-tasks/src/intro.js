@@ -1,6 +1,5 @@
-let count = 0
-
 export function createCounter() {
+  let count = 0
   return function () {
     return ++count
   }

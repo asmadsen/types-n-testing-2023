@@ -4,7 +4,7 @@
   "author": "Andreas Storesund Madsen <andreas@asmadsen.no>",
   "license": "MIT",
   "scripts": {
-    "test": "vitest --ui"
+    "test": "vitest"
   },
   "devDependencies": {
     "@asmadsen/prettier-config": "^2.0.1",

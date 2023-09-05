@@ -1,6 +1,6 @@
 import { splitName } from './name'
 
-it.skip('should return object with firstName and lastName', () => {
+it('should return object with firstName and lastName', () => {
   const fullName = 'John Doe'
   const result = splitName(fullName)
 
