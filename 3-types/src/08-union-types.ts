@@ -30,6 +30,6 @@ export const asNumber = (input: string | number) => {
   if (typeof input === 'number') {
     return input
   } else {
-    return parseFloat(input)
+    return Number(input)
   }
 }

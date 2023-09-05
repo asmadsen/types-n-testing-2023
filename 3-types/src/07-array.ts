@@ -14,7 +14,7 @@ export const acceptNumberArray = (input: number[]) => {
 
 // export const acceptNumberArray = (input: Array<number>) => {}
 
-export const acceptArrayWithAnyContent = (input: any[]) => {
+export const acceptArrayWithAnyContent = (input: unknown[]) => {
   console.log(`Recevied array: ${input}`)
 }
 
